@@ -4,12 +4,12 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+## Builder
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+Builder est un patron de conception de création qui permet de construire des objets complexes étape par étape. Il permet de produire différentes variations ou représentations d’un objet en utilisant le même code de construction.
 
-### Scooter 
+exemple général : 
+![](https://i.imgur.com/IRznfUt.png)
 
-![](https://i.imgur.com/VHKNcU9.png)
-
-Scooter est une classe mère , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+exemple concret : 
+![](https://i.imgur.com/cVdYI87.png)

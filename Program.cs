@@ -1,12 +1,5 @@
 ﻿using System;
 
-// Abstract factory design pattern 
-
-//
-//Console.WriteLine("Hello, World!");
-
-// Class Catalogue 
-
 public abstract class Automobile
 {
     protected string modele;
@@ -72,5 +65,8 @@ public abstract class Automobile
             auto.afficherCarac();
         }
     }
+
+
+
 
 }

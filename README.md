@@ -12,4 +12,11 @@ Ce design pattern permet de séparer la création d'objets dérivant d'une class
 
 ![](https://i.imgur.com/VHKNcU9.png)
 
-Scooter est une classe mère , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+
+![](https://i.imgur.com/DWLqZLU.png)
+
+Ce schéma est une représentation générique du dessign pattern.
+
+La classe abstraite ProduitAbstraitB équivaut à Scooter 
+La classe abstraite ProduitAbstraitA équivaut à Automobile

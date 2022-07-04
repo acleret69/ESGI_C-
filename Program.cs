@@ -73,8 +73,4 @@ public abstract class Automobile
         }
     }
 
-
-
-
 }
-

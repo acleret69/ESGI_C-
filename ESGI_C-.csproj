@@ -8,4 +8,31 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\..\..\Downloads\Prototype\BonDeCommande.cs">
+      <Link>Prototype\BonDeCommande.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\CertificatCession.cs">
+      <Link>Prototype\CertificatCession.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\DemandeImmatriculation.cs">
+      <Link>Prototype\DemandeImmatriculation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\Document.cs">
+      <Link>Prototype\Document.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\Liasse.cs">
+      <Link>Prototype\Liasse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\LiasseClient.cs">
+      <Link>Prototype\LiasseClient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\LiasseVierge.cs">
+      <Link>Prototype\LiasseVierge.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Downloads\Prototype\Utilisateur.cs">
+      <Link>Prototype\Utilisateur.cs</Link>
+    </Compile>
+  </ItemGroup>
+
 </Project>

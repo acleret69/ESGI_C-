@@ -1,72 +1,35 @@
 ﻿using System;
 
-public abstract class Automobile
+public class Program
 {
-    protected string modele;
-    protected string couleur;
-    protected int puissance;
-    protected double espace;
 
-    public Automobile(string modele, string couleur, int puissance, double espace)
+
+    static void Main(string[] args)
     {
-        this.modele = modele;
-        this.couleur = couleur;
-        this.puissance = puissance;
-        this.espace = espace;
+        Vendeur vendeur1 = Vendeur.Instance();
+        vendeur1.nbVente = 10;
+        Console.WriteLine(vendeur1.nbVente);
+        Vendeur vendeur2 = Vendeur.Instance();
+        vendeur2.nbVente = 20;
+        Console.WriteLine(vendeur1.nbVente);
+        Console.WriteLine(vendeur2.nbVente);
     }
-
-    public abstract void afficherCarac();
-
-
-    //----------------------------------------------------------------------------------------------------
-
-    public class AutomobileElectrique : Automobile
-    {
-        public AutomobileElectrique(string modele, string couleur, int puissance, double espace) : base(modele, couleur, puissance, espace)
-        {
-
-        }
-
-        public override void afficherCarac()
-        {
-            Console.WriteLine("Automobile électrique : ");
-            Console.WriteLine("Modele : " + modele);
-            Console.WriteLine("couleur : " + couleur);
-            Console.WriteLine("puissance : " + puissance);
-            Console.WriteLine("espace : " + espace);
-
-        }
-
-    }
-
-
-    public interface FabriqueVehicule
-    {
-        Automobile creerAutomobile(string modele, string couleur, int puissance, double espace);
-
-    }
-
-    public class FabriqueAutomobileElectrique : FabriqueVehicule
-    {
-        public Automobile creerAutomobile(string modele, string couleur, int puissance, double espace)
-        {
-            return new AutomobileElectrique(modele, couleur, puissance, espace);
-        }
-    }
-
-    public class Catalogue
-    {
-
-        public static int vehicule = 3;
-        static void Main(string[] args)
-        {
-            FabriqueVehicule fabrique = new FabriqueAutomobileElectrique();
-            Automobile auto = fabrique.creerAutomobile("Tesla", "Bleu", 250, 2.5);
-            auto.afficherCarac();
-        }
-    }
-
-
-
-
 }
+
+public class Vendeur
+    {
+        private static Vendeur _instance = null;
+
+        public int nbVente { get; set; }
+
+        private Vendeur()
+        {
+        }
+
+        public static Vendeur Instance()
+        {
+            if (_instance == null)
+                _instance = new Vendeur();
+            return _instance;
+        }
+    }

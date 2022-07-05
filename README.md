@@ -4,19 +4,20 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+#### Exercice : composition vs Heritage en c#
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+Heritage :
 
-### Scooter 
+L'héritage consiste qu'une classe B on tout les attributs du classe A.
 
-![](https://i.imgur.com/VHKNcU9.png)
+![](https://i.imgur.com/EBQd9Jo.png)
 
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+Composition :
 
-![](https://i.imgur.com/DWLqZLU.png)
+La composition consiste qu'une classe B est un ou quelques attributs d'une classe A .
 
-Ce schéma est une représentation générique du dessign pattern.
+![](https://i.imgur.com/g5r3RZR.png)
 
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+sources:
+
+Au lieu d’avoir une classe B qui hérite d’une classe A, on déclare dans B un attribut qui sera une instance de la classe A.

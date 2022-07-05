@@ -4,19 +4,14 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+### Prototype
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+Le pattern prototype permet la création d'objets à partir d'autres objets "prototypes" disposant d'une méthode Clone() qui retourne un object identique
 
-### Scooter 
+code + schéma du pattern prototype
 
-![](https://i.imgur.com/VHKNcU9.png)
+schéma du pattern singleton
 
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+=> code du pattern singleton
 
-![](https://i.imgur.com/DWLqZLU.png)
-
-Ce schéma est une représentation générique du dessign pattern.
-
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+![](https://i.imgur.com/eT0nHRW.png)

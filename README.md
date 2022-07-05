@@ -4,19 +4,20 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+## Pattern de conception
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+### Singleton 
 
-### Scooter 
+Singleton est un patron de conception de création qui garantit que l’instance d’une classe n’existe qu’en un seul exemplaire, tout en fournissant un point d’accès global à cette instance.
 
-![](https://i.imgur.com/VHKNcU9.png)
+Le pattern singleton permet est utilisé pour créer une instance unique de classe.
 
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+D'autre pattern comme le pattern Abstract Factory est suceptible d'utiliser ce type d'instance unique.
 
-![](https://i.imgur.com/DWLqZLU.png)
+L'application va utiliser la classe liasse vierge qui ne possédera qu'une seule instance.
 
-Ce schéma est une représentation générique du dessign pattern.
+![](https://i.imgur.com/XOyH7yi.png)
 
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+![](https://i.imgur.com/yPcEoYz.png)
+
+Chaque classe qui utilise la liasse vierge doit avoir accès à la même instance. On doit surtout s'arranger pour qu'on ne puisse pas en créer de nouvelles

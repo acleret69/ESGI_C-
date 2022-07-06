@@ -4,19 +4,23 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+## Pattern de comportement
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+### intro
 
-### Scooter 
+Les patterns de comportement distribuent les algorithmes/traitements entre les objets .
+Ils organisent les interactions en renseignant le flux de contrôle et de traitement au sein d'un système d'objets
 
-![](https://i.imgur.com/VHKNcU9.png)
+La distribution se fait soit par l'héritage soit par "délégation"
 
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+### chain of responsability
 
-![](https://i.imgur.com/DWLqZLU.png)
+Le but est de contruire une chaine d'objets de manière à ce que si un objet de la chaine ne peut répondre à une requête, il puisse la passer à in "successeur" et ainsi de suite jusqu'à ce que l'un des objets puissent y répondre.
 
-Ce schéma est une représentation générique du dessign pattern.
+![](https://i.imgur.com/iM1qpCG.png)
 
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+structure concrète du pattern :
+![](https://i.imgur.com/Qiu0sUn.png)
+
+structure générique du pattern :
+![](https://i.imgur.com/o85fUHO.png)

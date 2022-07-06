@@ -4,19 +4,24 @@
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
 
-## Abstract Factory
+## Pattern de structure ou de structuration
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
+### intro
 
-### Scooter 
+Les patterns de structuration permettent de faciliter l'indépendance de l'interface d'un objet et de son implémentation.
 
-![](https://i.imgur.com/VHKNcU9.png)
+En fournissant les interfaces ce pattern permet d'encapsuler la composition des objets.
 
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
+cela augmente le niveau d'abstraction d'un système donné un peu à la manière des patterns de créatoon qui encapsulent la création d'objects .
 
-![](https://i.imgur.com/DWLqZLU.png)
+Ces pattern mettent en avant les interfaces.
 
-Ce schéma est une représentation générique du dessign pattern.
+### Composite
 
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+Ce pattern offre un cadre de conception d'objets dont on ne connait pas la profondeur. (On peut utiliser un arbre en tant qu'analogie).
+
+Les "clients" interagissent avec les objets sans connaître la structure de l'arbre.
+
+![](https://i.imgur.com/shKDQbM.png)
+
+![](https://i.imgur.com/BD8INGh.png)

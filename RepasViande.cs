@@ -1,9 +1,14 @@
 namespace ESGI_C_;
 
-public class FabriqueAutomobileElectrique : FabriqueVehicule
+public class RepasViande : Repas
 {
-    public Automobile creerAutomobile(string modele, string couleur, int puissance, double espace)
+    public Burger creerBurger(string nom, string temps, int température, string typeCuisson)
     {
-        return new AutomobileElectrique(modele, couleur, puissance, espace);
+        return new BurgerViandes(nom, temps, température, typeCuisson);
+    }
+    
+    public Pizza creerPizza(string nom, string temps, int température, string typeCuisson)
+    {
+        return new PizzaViande(nom, temps, température, typeCuisson);
     }
 }

@@ -1,19 +1,20 @@
 namespace ESGI_C_;
 
-public class AutomobileElectrique : Automobile
+public class BurgerVegetarien : Burger
 {
-    public AutomobileElectrique(string modele, string couleur, int puissance, double espace) : base(modele, couleur, puissance, espace)
+    public BurgerVegetarien(string nom, string temps, int température, string typeCuisson) : base( nom,  temps,  température,  typeCuisson)
     {
 
     }
 
-    public override void afficherCarac()
+    public override void afficherRecette()
     {
-        Console.WriteLine("Automobile électrique : ");
-        Console.WriteLine("Modele : " + modele);
-        Console.WriteLine("couleur : " + couleur);
-        Console.WriteLine("puissance : " + puissance);
-        Console.WriteLine("espace : " + espace);
+        Console.WriteLine("Recette burger Végétarien : ");
+        Console.WriteLine("Nom : " + nom);
+        Console.WriteLine("temps de cuisson : " + temps);
+        Console.WriteLine("Le type de cuisson pour faire cuire l'hamburger est au  : " + typeCuisson);
+        Console.WriteLine("Il faut que la température soit de : " + température);
+        Console.WriteLine("-----------------------------------------------");
 
     }
 

@@ -1,20 +1,20 @@
 namespace ESGI_C_;
 
-public abstract class Automobile
+public abstract class Burger
 {
-    protected string modele;
-    protected string couleur;
-    protected int puissance;
-    protected double espace;
+    protected string nom { get; set; }
+    protected string temps{ get; set; }
+    protected int température{ get; set; }
+    protected string typeCuisson { get; set; }
 
-    public Automobile(string modele, string couleur, int puissance, double espace)
+    public Burger(string nom, string temps, int température, string typeCuisson)
     {
-        this.modele = modele;
-        this.couleur = couleur;
-        this.puissance = puissance;
-        this.espace = espace;
+        this.nom = nom;
+        this.temps = temps;
+        this.température = température;
+        this.typeCuisson = typeCuisson;
     }
 
-    public abstract void afficherCarac();
+    public abstract void afficherRecette();
     
 }

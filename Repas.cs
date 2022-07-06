@@ -1,7 +1,9 @@
 namespace ESGI_C_;
 
-public interface FabriqueVehicule
+public interface Repas
 {
-    Automobile creerAutomobile(string modele, string couleur, int puissance, double espace);
+    Burger creerBurger(string nom, string temps, int température, string typeCuisson);
+    
+    Pizza creerPizza(string nom, string temps, int température, string typeCuisson);
 
 }

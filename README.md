@@ -1,5 +1,3 @@
-# ESGI_C#
-
 # Project design pattern adapter
 
 ## Contexte 

@@ -6,7 +6,7 @@ public class listPerso
      {
           saiyan goku = new saiyan();
           Namekina piccolo = new Namekina();
-          AndroidAdapter c17 = new AndroidAdapter(new android());
+          AndroidAdapter c17 = new AndroidAdapter();
 
           Console.WriteLine("goku attack: "+goku.attack());
           Console.WriteLine("piccolo attack: "+piccolo.attack());

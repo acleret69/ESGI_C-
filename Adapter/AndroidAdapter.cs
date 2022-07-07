@@ -3,12 +3,12 @@ namespace ESGI_C_.Adapter;
 public class AndroidAdapter : Warrior
 {
 
-    
-    android android = new android();
 
-    public AndroidAdapter(android android)
+    private android android;
+
+    public AndroidAdapter()
     {
-        this.android = android;
+         android = new android();
     }
     public int attaque_base { get; set; }
 

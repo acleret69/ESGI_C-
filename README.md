@@ -1,22 +1,9 @@
 # ESGI_C#
 
-# Designs patterns
+# Project dessign pattern Factory and Singleton
 
-Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
+## Contexte 
 
-## Abstract Factory
+Une chaine de Restaurant Boccuse dans notre cas , propose dans ses restaurants situé dans des lieux différenst 2 types de plats . Des plats végétarien et des plats avec de la viandes. Cette chaines de restaurants veut également avoir qu'un unique menu ainsi de ses différents restaurants . 
 
-Ce design pattern permet de séparer la création d'objets dérivant d'une classe mère. Cela permet de crée plusieurs objets issue d'une même classe mère.
-
-### Scooter 
-
-![](https://i.imgur.com/VHKNcU9.png)
-
-Scooter est une classe abstraite , le catalogue contient des types scooter . Et les classe ScooterElectricté et Scooteressence hérite de Scooter.
-
-![](https://i.imgur.com/DWLqZLU.png)
-
-Ce schéma est une représentation générique du dessign pattern.
-
-La classe abstraite ProduitAbstraitB équivaut à Scooter 
-La classe abstraite ProduitAbstraitA équivaut à Automobile
+Schéma de la solution propsée avec l'aide du design Pattern Abstract Factory et Singleton : 

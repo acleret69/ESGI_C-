@@ -13,8 +13,9 @@ public class Restaurant
 
     public void AfficherMenu()
     {
-        Console.WriteLine("le nombre de repas dans le menu du restaurant "+nom+" est de : " + menu.nbRepas);
+        Console.WriteLine("Voici la liste des repas dans le menu du restaurant "+nom );
         Console.WriteLine("-----------------------------------------------");
+        menu.AfficherMenu();
         
     }
 }

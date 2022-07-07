@@ -1,9 +1,9 @@
 public abstract class Decorateur :
-  ComposantGraphiqueVehicule
+  IMolecule
 {
-  protected ComposantGraphiqueVehicule composant;
+  protected IMolecule composant;
 
-  public Decorateur(ComposantGraphiqueVehicule composant)
+  public Decorateur(IMolecule composant)
   {
     this.composant = composant;
   }

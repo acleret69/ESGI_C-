@@ -7,7 +7,7 @@ public class AtomeDecorateur : Decorateur
 
   protected void afficheAtome()
   {
-    Console.WriteLine("Informations des atomes");
+    Console.WriteLine("Une molécule contient un groupe d'atomes mais que contient les atomes ? ");
   }
 
   public override void affiche()

@@ -7,7 +7,7 @@ public class ElectronDecorateur : Decorateur
 
   protected void afficheElectron()
   {
-    Console.WriteLine("Electron de la molécule");
+    Console.WriteLine("Les atomes contient plusieurs choses comme les électrons mais que possédes les électrons ? ");
   }
 
   public override void affiche()

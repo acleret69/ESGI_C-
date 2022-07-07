@@ -4,6 +4,6 @@ public class VueMolecule : IMolecule
 {
   public void affiche()
   {
-    Console.WriteLine("Affichage de la molécule");
+    Console.WriteLine("Détails d'une molécule :");
   }
 }

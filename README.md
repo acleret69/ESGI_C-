@@ -19,8 +19,8 @@ Le but est de contruire une chaine d'objets de manière à ce que si un objet de
 
 ![](https://i.imgur.com/iM1qpCG.png)
 
-structure concrète du pattern :
+structure concrète du pattern :  
 ![](https://i.imgur.com/Qiu0sUn.png)
 
-structure générique du pattern :
+structure générique du pattern :  
 ![](https://i.imgur.com/o85fUHO.png)

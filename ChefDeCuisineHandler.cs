@@ -1,12 +1,12 @@
 namespace ESGI_C_;
 
-public class ConcreteHandler2 : Handler
+public class ChefDeCuinsineHandler : Handler
 {
     public override void HandleRequest(int request)
     {
-        if (request >= 1000 && request < 2500)
+        if (request < 1000)
         {
-            Console.WriteLine("{0} le chef de cuisine doit obtenir l'approbation du responsable des achats",
+            Console.WriteLine("{0} : Le chef cuisinier a l'autorisation pour la somme de {1} €",
                 this.GetType().Name, request);
         }
         else if (successor != null)

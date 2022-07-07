@@ -5,50 +5,40 @@ public class Client
     public static int vehicule = 3;
     static void Main(string[] args)
     {
+        //  création du premier menu et du premier restaurant 
         Menu menu1 = Menu.Instance();
-        menu1.nbRepas = 10;
-
         Restaurant restaurant1 = new Restaurant("Boccuse Lyon 1", menu1);
-        restaurant1.AfficherMenu();
         
+        // créations des repas avec le pattern abstract Factory  
         Repas repas1 = new RepasVegetarien();
         Burger burger1 = repas1.creerBurger("bigMac","10 minutes",150,"four");
-        burger1.afficherRecette();
+        menu1.AjouterPlat(burger1);
         
         Repas repas2 = new RepasViande();
         Burger burger2 = repas2.creerBurger("bigMac poulet","15 minutes",160,"poêle");
-        burger2.afficherRecette();
+        menu1.AjouterPlat(burger2);
         
-        Menu menu2 = Menu.Instance();
-        menu2.nbRepas = 12;
-        Restaurant restaurant2 = new Restaurant("Boccuse Lyon 3", menu2);
         restaurant1.AfficherMenu();
+        
+        //  création du deuxième menu et du deuxième restaurant 
+        Menu menu2 = Menu.Instance();
+        Restaurant restaurant2 = new Restaurant("Boccuse Lyon 3", menu2);
+        
+        //vérification Pattern Singleton
         restaurant2.AfficherMenu();
         
+        // créations de d'autre repas avec le pattern abstract Factory
         Repas repas3 = new RepasVegetarien();
         Pizza pizza1 = repas3.creerPizza("Pizza chèvre miel","10 minutes",150,"four");
-        pizza1.afficherRecette();
-        
+        menu2.AjouterPlat(pizza1);
+
         Repas repas4 = new RepasViande();
         Pizza pizza2 = repas4.creerPizza("spécial pizza poulet","15 minutes",160,"poêle");
-        pizza2.afficherRecette();
+        menu2.AjouterPlat(pizza2);
         
-        
+        // Deuxième vérification Pattern Singleton
+        restaurant1.AfficherMenu();
+        restaurant2.AfficherMenu();
 
-
-
-        /*RepasViande repasViande = new RepasViande();
-        Burger bigMac = repasViande.creerBurger("bigMac","10 minutes",150,"four");
-        RepasVegetarien repasVegetarien = new RepasVegetarien();
-        Pizza pizzaChevreMiel = repasVegetarien.creerPizza("pizza chèvre miel","10 minutes",150,"four");
-        menu1.burgerViandesList.Add(bigMac);
-        menu1.pizzaVegetarienList.Add(pizzaChevreMiel);
-        Restaurant restaurant1 = new Restaurant("bigM", menu1);
-        restaurant1.AfficherMenu();*/
-
-
-        /*FabriqueVehicule fabrique = new FabriqueAutomobileElectrique();
-        Automobile auto = fabrique.creerAutomobile("Tesla", "Bleu", 250, 2.5);
-        auto.afficherCarac();*/
     }
 }

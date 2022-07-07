@@ -8,31 +8,30 @@ public class Client
         Menu menu1 = Menu.Instance();
         menu1.nbRepas = 10;
 
-        Restaurant restaurant1 = new Restaurant("MacDo", menu1);
+        Restaurant restaurant1 = new Restaurant("Boccuse Lyon 1", menu1);
         restaurant1.AfficherMenu();
         
-
         Repas repas1 = new RepasVegetarien();
         Burger burger1 = repas1.creerBurger("bigMac","10 minutes",150,"four");
         burger1.afficherRecette();
         
         Repas repas2 = new RepasViande();
-        Burger burger2 = repas1.creerBurger("bigMac poulet","15 minutes",160,"poêle");
+        Burger burger2 = repas2.creerBurger("bigMac poulet","15 minutes",160,"poêle");
         burger2.afficherRecette();
         
         Menu menu2 = Menu.Instance();
         menu2.nbRepas = 12;
-        Restaurant restaurant2 = new Restaurant("Pizza Cozy", menu2);
+        Restaurant restaurant2 = new Restaurant("Boccuse Lyon 3", menu2);
         restaurant1.AfficherMenu();
         restaurant2.AfficherMenu();
         
         Repas repas3 = new RepasVegetarien();
-        Pizza pizza1 = repas1.creerPizza("Pizza chèvre miel","10 minutes",150,"four");
-        burger1.afficherRecette();
+        Pizza pizza1 = repas3.creerPizza("Pizza chèvre miel","10 minutes",150,"four");
+        pizza1.afficherRecette();
         
         Repas repas4 = new RepasViande();
-        Pizza pizza2 = repas1.creerPizza("spécial pizza poulet","15 minutes",160,"poêle");
-        burger2.afficherRecette();
+        Pizza pizza2 = repas4.creerPizza("spécial pizza poulet","15 minutes",160,"poêle");
+        pizza2.afficherRecette();
         
         
 

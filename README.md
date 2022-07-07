@@ -1,5 +1,3 @@
-# ESGI_C#
-
 # Project dessign pattern Factory and Singleton
 
 ## Contexte 

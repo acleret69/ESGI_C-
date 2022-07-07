@@ -7,6 +7,6 @@ public class saiyan : Warrior
     public int attack()
     {
         var rand = new Random();
-        return rand.Next(14) * 100 + this.attaque_base;
+        return rand.Next(20) * 100 + this.attaque_base;
     }
 }

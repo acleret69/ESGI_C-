@@ -1,11 +1,11 @@
 # ESGI_C#
 
-# Designs patterns
+# Project design pattern adapter
 
-Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.
+## Contexte 
 
-### Adapter
+Dans un jeu vidéo on veut pouvoir crée plusieurs personnages (guerrier) de race différentes qui ont des données différentes .
 
-le but de ce pattern est de convertir l'interface d'une classe donnée en une interface attendue par des clients afin qu'ils puissent travailler ensemble. En résumé, il permet de donner à une classe existante une nouvelle interface pour répondre aux besoins d'un client.
+Schéma de la solution proposée avec l'aide du design Pattern adapter :
 
-![](https://i.imgur.com/F7VOzKH.png)
+![](https://i.imgur.com/QAVtj7V.png)

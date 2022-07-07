@@ -1,5 +1,3 @@
-# ESGI_C#
-
 # Designs patterns
 
 Ils répondent à des problèmes de conception POO , ils résulte de bonne pratique en POO.

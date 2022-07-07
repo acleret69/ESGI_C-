@@ -1,5 +1,3 @@
-# ESGI_C#
-
 # Project Design Pattern chain of Responsability 
 
 ## Context 
